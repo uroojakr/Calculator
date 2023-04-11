@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+    <link rel="icon" type="image/png" href="/images/calculator.png" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Aboreto"
+      rel="stylesheet"
+    />
+    <script src="calculator.js" ;></script>
+  </head>
+  <body>
+    <section>
+      <div class="calculator-box">
+        <form>
+          <div class="display">
+            <input type="text" id="display" name="display" />
+          </div>
+          <div>
+            <input type="button" value="Clear" onclick="handleInput('Clear')" />
+            <input type="button" value=" Del " onclick="handleInput('Del')" />
+            <input type="button" value="/" onclick="handleInput('/')" />
+            <input type="button" value="." onclick="handleInput('.')" />
+          </div>
+          <div>
+            <input type="button" value="7" onclick="handleInput('7')" />
+            <input type="button" value="8" onclick="handleInput('8')" />
+            <input type="button" value="9" onclick="handleInput('9')" />
+            <input type="button" value="*" onclick="handleInput('*')" />
+          </div>
+          <div>
+            <input type="button" value="4" onclick="handleInput('4')" />
+            <input type="button" value="5" onclick="handleInput('5')" />
+            <input type="button" value="6" onclick="handleInput('6')" />
+            <input type="button" value="-" onclick="handleInput('-')" />
+          </div>
+          <div>
+            <input type="button" value="1" onclick="handleInput('1')" />
+            <input type="button" value="2" onclick="handleInput('2')" />
+            <input type="button" value="3" onclick="handleInput('3')" />
+            <input type="button" value="+" onclick="handleInput('+')" />
+          </div>
+          <div>
+            <input type="button" value="0" onclick="handleInput('0')" />
+            <input type="button" value="00" onclick="handleInput('00')" />
+            <input
+              type="button"
+              value="="
+              class="equal"
+              onclick="handleInput('=')"
+            />
+          </div>
+        </form>
+      </div>
+    </section>
+  </body>
+</html>
